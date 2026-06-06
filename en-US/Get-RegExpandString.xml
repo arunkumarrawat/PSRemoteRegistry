@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml">
+  <!-- v 1.2.0.0 -->
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+    <command:details>
+      <command:name>Get-RegExpandString</command:name>
+      <maml:description>
+        <maml:para>Retrieves a null-terminated string that contains unexpanded references to environment variables (REG_EXPAND_SZ) from local or remote computers.</maml:para>
+      </maml:description>
+      <maml:copyright>
+        <maml:para>
+        </maml:para>
+      </maml:copyright>
+      <command:verb>Get</command:verb>
+      <command:noun>RegExpandString</command:noun>
+      <dev:version>
+      </dev:version>
+    </command:details>
+    <maml:description>
+      <maml:para>
+      </maml:para>
+    </maml:description>
+    <!-- SYNTAX -->
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-RegExpandString</maml:name>
+        <command:parameter required="false" variableLength="" globbing="false" pipelineInput="true (ByValue, ByPropertyName)" position="1">
+          <maml:name>ComputerName</maml:name>
+          <maml:description>
+            <maml:para>
+            </maml:para>
+          </maml:description>
+        </command:parameter>
+        <command:parameter required="false" variableLength="" globbing="false" pipelineInput="true (ByPropertyName)" position="2">
+          <maml:name>Hive</maml:name>
+          <maml:description>
+            <maml:para>
+            </maml:para>
+          </maml:description>
+        </command:parameter>
+        <command:parameter required="true" variableLength="" globbing="false" pipelineInput="true (ByPropertyName)" position="3">
+          <maml:name>Key</maml:name>
+          <maml:description>
+            <maml:para>
+            </maml:para>
+          </maml:description>
+        </command:parameter>
+        <command:parameter required="true" variableLength="" globbing="false" pipelineInput="true (ByPropertyName)" position="4">
+          <maml:name>Value</maml:name>
+          <maml:description>
+            <maml:para>
+            </maml:para>
+          </maml:description>
+        </command:parameter>
+        <command:parameter required="false" variableLength="" globbing="false" pipelineInput="false" position="named">
+          <maml:name>ExpandEnvironmentNames</maml:name>
+          <maml:description>
+            <maml:para>
+            </maml:para>
+          </maml:description>
+        </command:parameter>
+        <command:parameter required="false" variableLength="" globbing="false" pipelineInput="false" position="named">
+          <maml:name>View</maml:name>
+          <maml:description>
+            <maml:para>
+            </maml:para>
+          </maml:description>
+        </command:parameter>
+        <command:parameter required="false" variableLength="" globbing="false" pipelineInput="false" position="named">
+          <maml:name>Ping</maml:name>
+          <maml:description>
+            <maml:para>
+            </maml:para>
+          </maml:description>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <!-- PARAMETERS -->
+    <command:parameters>
+      <command:parameter required="false" variableLength="" globbing="false" pipelineInput="true (ByValue, ByPropertyName)" position="1">
+        <maml:name>ComputerName</maml:name>
+        <maml:description>
+          <maml:para>Adds a new member even the object has a custom member with the same name. You cannot use the Force parameter to replace a standard member of a type.</maml:para>
+        </maml:description>
+        <command:parameterValue required="String[]" variableLength="">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri>
+          </maml:uri>
+        </dev:type>
+        <dev:defaultValue>$env:COMPUTERNAME</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:parameters>
+      <command:parameter required="false" variableLength="" globbing="false" pipelineInput="true (ByPropertyName)" position="2">
+        <maml:name>Hive</maml:name>
+        <maml:description>
+          <maml:para>Adds a new member even the object has a custom member with the same name. You cannot use the Force parameter to replace a standard member of a type.</maml:para>
+        </maml:description>
+        <command:parameterValue required="String" variableLength="">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri>
+          </maml:uri>
+        </dev:type>
+        <dev:defaultValue>LocalMachine</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:parameters>
+      <command:parameter required="true" variableLength="" globbing="false" pipelineInput="true (ByPropertyName)" position="3">
+        <maml:name>Key</maml:name>
+        <maml:description>
+          <maml:para>Adds a new member even the object has a custom member with the same name. You cannot use the Force parameter to replace a standard member of a type.</maml:para>
+        </maml:description>
+        <command:parameterValue required="String" variableLength="">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri>
+          </maml:uri>
+        </dev:type>
+        <dev:defaultValue>
+        </dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:parameters>
+      <command:parameter required="true" variableLength="" globbing="false" pipelineInput="true (ByPropertyName)" position="4">
+        <maml:name>Value</maml:name>
+        <maml:description>
+          <maml:para>Adds a new member even the object has a custom member with the same name. You cannot use the Force parameter to replace a standard member of a type.</maml:para>
+        </maml:description>
+        <command:parameterValue required="String" variableLength="">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri>
+          </maml:uri>
+        </dev:type>
+        <dev:defaultValue>
+        </dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:parameters>
+      <command:parameter required="false" variableLength="" globbing="false" pipelineInput="false" position="named">
+        <maml:name>ExpandEnvironmentNames</maml:name>
+        <maml:description>
+          <maml:para>Adds a new member even the object has a custom member with the same name. You cannot use the Force parameter to replace a standard member of a type.</maml:para>
+        </maml:description>
+        <command:parameterValue required="SwitchParameter" variableLength="">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri>
+          </maml:uri>
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:parameters>
+      <command:parameter required="false" variableLength="" globbing="false" pipelineInput="false" position="named">
+        <maml:name>View</maml:name>
+        <maml:description>
+          <maml:para>Adds a new member even the object has a custom member with the same name. You cannot use the Force parameter to replace a standard member of a type.</maml:para>
+        </maml:description>
+        <command:parameterValue required="" variableLength="">RegistryView</command:parameterValue>
+        <dev:type>
+          <maml:name>RegistryView</maml:name>
+          <maml:uri>
+          </maml:uri>
+        </dev:type>
+        <dev:defaultValue>Default</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:parameters>
+      <command:parameter required="false" variableLength="" globbing="false" pipelineInput="false" position="named">
+        <maml:name>Ping</maml:name>
+        <maml:description>
+          <maml:para>Adds a new member even the object has a custom member with the same name. You cannot use the Force parameter to replace a standard member of a type.</maml:para>
+        </maml:description>
+        <command:parameterValue required="SwitchParameter" variableLength="">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri>
+          </maml:uri>
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <!-- INPUT OUTPUT -->
+    <command:inputTypes>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>PSFanatic.Registry.RegistryValue (PSCustomObject)</maml:name>
+          <maml:uri>
+          </maml:uri>
+          <maml:description>
+          </maml:description>
+        </dev:type>
+        <maml:description>
+          <maml:para>
+            <!-- description  -->
+          </maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <!-- ERROR -->
+    <command:terminatingErrors />
+    <command:nonTerminatingErrors />
+    <maml:alertSet>
+      <maml:title>
+      </maml:title>
+      <maml:alert>
+        <maml:para>Author: Shay Levy
+Blog  : http://PowerShay.com</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <!-- EXAMPLES  -->
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <maml:introduction>
+          <maml:para>
+          </maml:para>
+        </maml:introduction>
+        <dev:code>$Key = "SOFTWARE\Microsoft\Windows\CurrentVersion"</dev:code>
+        <dev:remarks>
+          <maml:para>
+Get-RegExpandString -Key $Key -Value ProgramFilesPath
+
+ComputerName Hive            Key                  Value             Data            Type
+------------ ----            ---                  -----             ----            ----
+COMPUTER1    LocalMachine    SOFTWARE\Microsof... ProgramFilesPath  %ProgramFiles%  ExpandString
+
+
+Description
+-----------
+The command gets the registry ProgramFilesPath ExpandString value from the local computer. 
+The returned value contains unexpanded references to environment variables.
+
+
+
+
+
+
+
+
+
+
+
+</maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText>
+            </command:commandText>
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <maml:introduction>
+          <maml:para>
+          </maml:para>
+        </maml:introduction>
+        <dev:code>[Environment]::Is64BitProcess</dev:code>
+        <dev:remarks>
+          <maml:para>
+False
+
+PS&gt; Get-RegExpandString -Key SOFTWARE\MyKey -ComputerName Server1 -View Registry64 -Value 64ExpandString
+
+ComputerName Hive         Key            Value          Data     Type
+------------ ----         ---            -----          ----     ----
+Server1      LocalMachine SOFTWARE\MyKey 64ExpandString %windir% ExpandString
+
+
+Description
+-----------
+This command is using an elevated 32-bit instance of Windows PowerShell to read values from 
+a 64-bit registry section of a remote 64-bit server. First we verify that the current console
+is a 32-bit instance by using the Is64BitProcess system environment variable. 
+
+Connecting to the 64-bit section of the remote server registry is done using the View 
+parameter.
+
+
+
+
+
+
+
+
+
+
+
+</maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText>
+            </command:commandText>
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
+        <maml:introduction>
+          <maml:para>
+          </maml:para>
+        </maml:introduction>
+        <dev:code>Get-RegExpandString -Key $Key -Value ProgramFilesPath -ComputerName SERVER1,SERVER2,SERVER3 -ExpandEnvironmentNames -Ping</dev:code>
+        <dev:remarks>
+          <maml:para>
+ComputerName Hive            Key                  Value             Data              Type
+------------ ----            ---                  -----             ----              ----
+SERVER1      LocalMachine    SOFTWARE\Microsof... ProgramFilesPath  C:\Program Files  ExpandString
+SERVER2      LocalMachine    SOFTWARE\Microsof... ProgramFilesPath  C:\Program Files  ExpandString
+SERVER3      LocalMachine    SOFTWARE\Microsof... ProgramFilesPath  C:\Program Files  ExpandString
+
+
+Description
+-----------
+The command gets the registry ProgramFilesPath ExpandString value from three remote computers. 
+When the ExpandEnvironmentNames Switch parameter is used, the data of the value is expnaded based on the environment variables data from the local environment.
+When the Switch parameter Ping is specified the command issues a ping test to each computer. 
+If the computer is not responding to the ping request a warning message is written to the console and the computer is not processed.
+
+
+
+
+
+
+
+
+
+
+
+</maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText>
+            </command:commandText>
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+    </command:examples>
+    <!-- LINKS  -->
+    <maml:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>
+        </maml:linkText>
+        <maml:uri>http://psrr.codeplex.com/wikipage?title=Get-RegExpandString</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-RegExpandString
+Get-RegValue
+Remove-RegValue
+Test-RegValue</maml:linkText>
+        <maml:uri>
+        </maml:uri>
+      </maml:navigationLink>
+    </maml:relatedLinks>
+    <!-- ROLE FUNCTIONALITY COMPONENT -->
+    <!-- <UserDefinedData xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns=""> -->
+    <UserDefinedData>
+      <name>Get-RegExpandString</name>
+      <role>Member of the built-in Administrators group on the target systems.</role>
+      <functionality>Remote Register management.</functionality>
+      <component>Remote Register management.</component>
+    </UserDefinedData>
+  </command:command>
+</helpItems>

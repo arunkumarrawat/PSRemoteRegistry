@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml">
+  <!-- v 1.2.0.0 -->
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+    <command:details>
+      <command:name>Get-RegString</command:name>
+      <maml:description>
+        <maml:para>Retrieves a registry string (REG_SZ) value from local or remote computers.</maml:para>
+      </maml:description>
+      <maml:copyright>
+        <maml:para>
+        </maml:para>
+      </maml:copyright>
+      <command:verb>Get</command:verb>
+      <command:noun>RegString</command:noun>
+      <dev:version>
+      </dev:version>
+    </command:details>
+    <maml:description>
+      <maml:para>
+      </maml:para>
+    </maml:description>
+    <!-- SYNTAX -->
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-RegString</maml:name>
+        <command:parameter required="false" variableLength="" globbing="false" pipelineInput="true (ByValue, ByPropertyName)" position="1">
+          <maml:name>ComputerName</maml:name>
+          <maml:description>
+            <maml:para>
+            </maml:para>
+          </maml:description>
+        </command:parameter>
+        <command:parameter required="false" variableLength="" globbing="false" pipelineInput="true (ByPropertyName)" position="2">
+          <maml:name>Hive</maml:name>
+          <maml:description>
+            <maml:para>
+            </maml:para>
+          </maml:description>
+        </command:parameter>
+        <command:parameter required="true" variableLength="" globbing="false" pipelineInput="true (ByPropertyName)" position="3">
+          <maml:name>Key</maml:name>
+          <maml:description>
+            <maml:para>
+            </maml:para>
+          </maml:description>
+        </command:parameter>
+        <command:parameter required="true" variableLength="" globbing="false" pipelineInput="true (ByPropertyName)" position="4">
+          <maml:name>Value</maml:name>
+          <maml:description>
+            <maml:para>
+            </maml:para>
+          </maml:description>
+        </command:parameter>
+        <command:parameter required="false" variableLength="" globbing="false" pipelineInput="false" position="named">
+          <maml:name>View</maml:name>
+          <maml:description>
+            <maml:para>
+            </maml:para>
+          </maml:description>
+        </command:parameter>
+        <command:parameter required="false" variableLength="" globbing="false" pipelineInput="false" position="named">
+          <maml:name>Ping</maml:name>
+          <maml:description>
+            <maml:para>
+            </maml:para>
+          </maml:description>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <!-- PARAMETERS -->
+    <command:parameters>
+      <command:parameter required="false" variableLength="" globbing="false" pipelineInput="true (ByValue, ByPropertyName)" position="1">
+        <maml:name>ComputerName</maml:name>
+        <maml:description>
+          <maml:para>Adds a new member even the object has a custom member with the same name. You cannot use the Force parameter to replace a standard member of a type.</maml:para>
+        </maml:description>
+        <command:parameterValue required="String[]" variableLength="">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri>
+          </maml:uri>
+        </dev:type>
+        <dev:defaultValue>$env:COMPUTERNAME</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:parameters>
+      <command:parameter required="false" variableLength="" globbing="false" pipelineInput="true (ByPropertyName)" position="2">
+        <maml:name>Hive</maml:name>
+        <maml:description>
+          <maml:para>Adds a new member even the object has a custom member with the same name. You cannot use the Force parameter to replace a standard member of a type.</maml:para>
+        </maml:description>
+        <command:parameterValue required="String" variableLength="">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri>
+          </maml:uri>
+        </dev:type>
+        <dev:defaultValue>LocalMachine</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:parameters>
+      <command:parameter required="true" variableLength="" globbing="false" pipelineInput="true (ByPropertyName)" position="3">
+        <maml:name>Key</maml:name>
+        <maml:description>
+          <maml:para>Adds a new member even the object has a custom member with the same name. You cannot use the Force parameter to replace a standard member of a type.</maml:para>
+        </maml:description>
+        <command:parameterValue required="String" variableLength="">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri>
+          </maml:uri>
+        </dev:type>
+        <dev:defaultValue>
+        </dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:parameters>
+      <command:parameter required="true" variableLength="" globbing="false" pipelineInput="true (ByPropertyName)" position="4">
+        <maml:name>Value</maml:name>
+        <maml:description>
+          <maml:para>Adds a new member even the object has a custom member with the same name. You cannot use the Force parameter to replace a standard member of a type.</maml:para>
+        </maml:description>
+        <command:parameterValue required="String" variableLength="">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri>
+          </maml:uri>
+        </dev:type>
+        <dev:defaultValue>
+        </dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:parameters>
+      <command:parameter required="false" variableLength="" globbing="false" pipelineInput="false" position="named">
+        <maml:name>View</maml:name>
+        <maml:description>
+          <maml:para>Adds a new member even the object has a custom member with the same name. You cannot use the Force parameter to replace a standard member of a type.</maml:para>
+        </maml:description>
+        <command:parameterValue required="" variableLength="">RegistryView</command:parameterValue>
+        <dev:type>
+          <maml:name>RegistryView</maml:name>
+          <maml:uri>
+          </maml:uri>
+        </dev:type>
+        <dev:defaultValue>Default</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:parameters>
+      <command:parameter required="false" variableLength="" globbing="false" pipelineInput="false" position="named">
+        <maml:name>Ping</maml:name>
+        <maml:description>
+          <maml:para>Adds a new member even the object has a custom member with the same name. You cannot use the Force parameter to replace a standard member of a type.</maml:para>
+        </maml:description>
+        <command:parameterValue required="SwitchParameter" variableLength="">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri>
+          </maml:uri>
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <!-- INPUT OUTPUT -->
+    <command:inputTypes>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>PSFanatic.Registry.RegistryValue (PSCustomObject)</maml:name>
+          <maml:uri>
+          </maml:uri>
+          <maml:description>
+          </maml:description>
+        </dev:type>
+        <maml:description>
+          <maml:para>
+            <!-- description  -->
+          </maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <!-- ERROR -->
+    <command:terminatingErrors />
+    <command:nonTerminatingErrors />
+    <maml:alertSet>
+      <maml:title>
+      </maml:title>
+      <maml:alert>
+        <maml:para>Author: Shay Levy
+Blog  : http://PowerShay.com</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <!-- EXAMPLES  -->
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <maml:introduction>
+          <maml:para>
+          </maml:para>
+        </maml:introduction>
+        <dev:code>Get-RegString -Hive LocalMachine -Key SOFTWARE\Microsoft\DataAccess -Value FullInstallVer</dev:code>
+        <dev:remarks>
+          <maml:para>
+ComputerName Hive         Key                           Value          Data           Type
+------------ ----         ---                           -----          ----           ----
+COMPUTER1    LocalMachine SOFTWARE\Microsoft\DataAccess FullInstallVer 6.1.7600.16385 String
+
+
+Description
+-----------
+The command gets the installed version of Microsoft Data Access Components (MDAC) from the local computer.
+The name of ComputerName parameter, which is optional, is omitted.
+
+
+
+
+
+
+
+
+
+
+
+</maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText>
+            </command:commandText>
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <maml:introduction>
+          <maml:para>
+          </maml:para>
+        </maml:introduction>
+        <dev:code>[Environment]::Is64BitProcess</dev:code>
+        <dev:remarks>
+          <maml:para>
+False
+
+PS&gt; Get-RegString -Hive LocalMachine -Key SOFTWARE\MyKey -ComputerName Server1 -Value 64String -View Registry64
+
+ComputerName Hive         Key            Value    Data  Type
+------------ ----         ---            -----    ----  ----
+Server1      LocalMachine SOFTWARE\MyKey 64String Hello String
+
+
+Description
+-----------
+This command is using an elevated 32-bit instance of Windows PowerShell to read values from 
+a 64-bit registry section of a remote 64-bit server. First we verify that the current console
+is a 32-bit instance by using the Is64BitProcess system environment variable. 
+
+Connecting to the 64-bit section of the remote server registry is done using the View 
+parameter.
+
+
+
+
+
+
+
+
+
+
+
+</maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText>
+            </command:commandText>
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
+        <maml:introduction>
+          <maml:para>
+          </maml:para>
+        </maml:introduction>
+        <dev:code>"SERVER1","SERVER2","SERVER3" | Get-RegString -Key SOFTWARE\Microsoft\DataAccess -Value FullInstallVer -Ping</dev:code>
+        <dev:remarks>
+          <maml:para>
+ComputerName Hive         Key                           Value          Data        Type
+------------ ----         ---                           -----          ----        ----
+SERVER1      LocalMachine SOFTWARE\Microsoft\DataAccess FullInstallVer 2.82.3959.0 String
+SERVER2      LocalMachine SOFTWARE\Microsoft\DataAccess FullInstallVer 2.82.3959.0 String
+SERVER3      LocalMachine SOFTWARE\Microsoft\DataAccess FullInstallVer 2.82.1830.0 String
+
+Description
+-----------
+The command gets the installed version of Microsoft Data Access Components (MDAC) from remote computers. 
+When the Switch parameter Ping is specified the command issues a ping test to each computer. 
+If the computer is not responding to the ping request a warning message is written to the console and the computer is not processed.
+
+
+
+
+
+
+
+
+
+
+
+</maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText>
+            </command:commandText>
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 4 --------------------------</maml:title>
+        <maml:introduction>
+          <maml:para>
+          </maml:para>
+        </maml:introduction>
+        <dev:code>Get-Content servers.txt | Get-RegString -Key SOFTWARE\Microsoft\DataAccess -Value FullInstallVer</dev:code>
+        <dev:remarks>
+          <maml:para>
+ComputerName Hive         Key                           Value          Data        Type
+------------ ----         ---                           -----          ----        ----
+SERVER1      LocalMachine SOFTWARE\Microsoft\DataAccess FullInstallVer 2.82.3959.0 String
+SERVER2      LocalMachine SOFTWARE\Microsoft\DataAccess FullInstallVer 2.82.3959.0 String
+SERVER3      LocalMachine SOFTWARE\Microsoft\DataAccess FullInstallVer 2.82.1830.0 String
+
+Description
+-----------
+The command uses the Get-Content cmdlet to get the server names from a text file.
+
+
+
+
+
+
+
+
+
+
+
+</maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText>
+            </command:commandText>
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 5 --------------------------</maml:title>
+        <maml:introduction>
+          <maml:para>
+          </maml:para>
+        </maml:introduction>
+        <dev:code>Get-RegString -Hive LocalMachine -Key SOFTWARE\Microsoft\DataAccess -Value FullInstallVer | Test-RegValue -ComputerName SERVER1,SERVER2 -Ping</dev:code>
+        <dev:remarks>
+          <maml:para>
+True
+True
+
+Description
+-----------
+This command gets the installed version of Microsoft Data Access Components (MDAC) from the local computer.
+The output is piped to the Test-RegValue function to check if the value exists on two remote computers.
+When the Switch parameter Ping is specified the command issues a ping test to each computer. 
+If the computer is not responding to the ping request a warning message is written to the console and the computer is not processed.
+
+
+
+
+
+
+
+
+
+
+
+</maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText>
+            </command:commandText>
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+    </command:examples>
+    <!-- LINKS  -->
+    <maml:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>
+        </maml:linkText>
+        <maml:uri>http://psrr.codeplex.com/wikipage?title=Get-RegString</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-RegString
+Get-RegValue
+Remove-RegValue
+Test-RegValue</maml:linkText>
+        <maml:uri>
+        </maml:uri>
+      </maml:navigationLink>
+    </maml:relatedLinks>
+    <!-- ROLE FUNCTIONALITY COMPONENT -->
+    <!-- <UserDefinedData xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns=""> -->
+    <UserDefinedData>
+      <name>Get-RegString</name>
+      <role>Member of the built-in Administrators group on the target systems.</role>
+      <functionality>Remote Register management.</functionality>
+      <component>Remote Register management.</component>
+    </UserDefinedData>
+  </command:command>
+</helpItems>
